@@ -3,32 +3,23 @@
 
 ## dev path
 
-
 1. [vercel dashboard](https://vercel.com/shervin1995/next-demo)
 2. [vercel app](https://next-demo-tan.vercel.app/)
-3. [next > navigate-between-pages](https://nextjs.org/learn/basics/navigate-between-pages)
-4. [wp rest api](https://developer.wordpress.org/rest-api/using-the-rest-api/backbone-javascript-client/)
+3. [nextjs docs > navigate-between-pages](https://nextjs.org/learn/basics/navigate-between-pages)
+4. [wp docs > rest api](https://developer.wordpress.org/rest-api/using-the-rest-api/backbone-javascript-client/)
+5. [156 indexed routes](https://docs.google.com/spreadsheets/d/1CKLqb_hHedFjxzPamxiFAPpVxHGTKmj16X2Spa06VKI/edit#gid=185234004)
+	* /article-slug/
+	* /tag/tag-slug/
+	* /tag/tag-slug/feed/
+	* /category/category-slug/
+	* /category/category-slug/feed/
+6. [full list of WP APIs](./README/wp-apis.md)
 
-
-## full list of apis
-
-before learning fetch data in next.js we should get a full list of apis with its method, necessary inputs to receive wanted.
-
-
-### WP APIs
-
-1. post-type: "post", "page"
-* GET `/wp-json/wp/v2/posts?per_page=100&`
-* GET `/wp-json/wp/v2/pages?per_page=100&`
-
-2. post-type: "fifu-img-url"
-* GET `/wp-json/wp/v2/`
-
-http://juniorfrontend.ir/wp-json/wp/v2/posts?per_page=100&rendered=true
 
 ## routing
 
 any folder name in `pages` directory is a sub route. keep it as same as wordpress routes:
+
 * posts: `juniorfrontend.ir/:namak`
 * pages: `juniorfrontend.ir/page/:slug`
 * category archive: 

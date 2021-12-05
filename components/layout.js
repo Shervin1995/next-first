@@ -29,7 +29,9 @@ function Layout({ children, home }) {
       </Head>
 
       <header className={styles.header}>
-        {home ? (
+        {
+        home ? 
+        (
           <>
             <Image
               priority
@@ -41,7 +43,9 @@ function Layout({ children, home }) {
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
-        ) : (
+        ) 
+        : 
+        (
           <>
             <Link href="/">
               <a>
@@ -61,7 +65,8 @@ function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )}
+        )
+        }
       </header>
 
       <main>

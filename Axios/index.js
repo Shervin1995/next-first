@@ -60,6 +60,11 @@ class service {
   getPostsByTag(tagID){
     return http.get(`/wp/v2/posts?per_page=100&tags=${tagID}`);
   }
+
+  //
+  getPosts(){
+    return http.get(`/wp/v2/posts?per_page=100`);
+  }
  
 
 }

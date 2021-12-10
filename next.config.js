@@ -3,7 +3,8 @@ module.exports = {
     images: {
       domains: [
           "raw.githubusercontent.com",
-          "archive.org"
+          "archive.org",
+          "cdn3.wpbeginner.com"
         ],
     },
 }

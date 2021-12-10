@@ -23,10 +23,12 @@ export default function Post({ articles, tagSlug }) {
             style={{display: "flex", borderBottom: "solid black 1px", paddingBottom: "10px", paddingTop: "10px"}}
             >
  
-              <div style={{direction: "rtl"}}>   
-                <Link href={article.slug}>
-                  <h4>{article.title}</h4>
+              <div style={{direction: "rtl"}}>  
+              <h4> 
+                <Link href={`/${article.slug}`}>
+                  {article.title}
                 </Link>
+                </h4>
               </div>  
 
               <div style={{marginLeft: "20px"}}>  

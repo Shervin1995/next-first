@@ -1,5 +1,5 @@
 # my1stNextjs ;)
-1400 azar 13 sat 
+1400 azar 19 Fri
 
 ## dev path
 

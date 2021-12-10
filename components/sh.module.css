@@ -1,0 +1,7 @@
+.bg{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    background-position: center;
+    height: 200px;
+}

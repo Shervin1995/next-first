@@ -20,13 +20,24 @@
 
 any folder name in `pages` directory is a sub route. keep it as same as wordpress routes:
 
-* posts: `juniorfrontend.ir/:namak`
-* pages: `juniorfrontend.ir/page/:slug`
-* category archive: 
-* hashtag archive: 
-* monthly archive: 
+* archive posts by tag 			`/tag/:slug`
+
+* archive posts by category 	`/category/:slug`
+* single post: 					`/:postSlug`
+* single page: 					`/:pageSlug`
+
+### optional 
+
+* archive posts by month 
+* archive fifu, mag, vid
 
 
 ## useful link
 
 [Learn Next.js](https://nextjs.org/learn)
+
+```
+<Link href={`/tag/${id}`}>
+	<a>{title}</a>
+</Link>
+```

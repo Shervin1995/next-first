@@ -33,15 +33,15 @@ function Layout({ children, home }) {
         home ? 
         (
           <>
-            <Image
+            {/* <Image
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            /> */}
+            <h1 className={utilStyles.heading2Xl}>لیست تگ ها</h1>
           </>
         ) 
         : 

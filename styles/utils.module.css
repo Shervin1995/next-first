@@ -4,7 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
-}
+} 
 
 .headingXl {
   font-size: 2rem;
@@ -26,7 +26,7 @@
 }
 
 .borderCircle {
-  border-radius: 9999px;
+  border-radius: 9999px; 
 }
 
 .colorInherit {

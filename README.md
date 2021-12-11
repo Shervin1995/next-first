@@ -1,5 +1,20 @@
-# my1stNextjs ;)
-1400 azar 19 Fri
+# next-demo v1.0
+1400 azar 20 Sat | my1stNextjs ;)
+
+## about this version
+
+[watch video](https://archive.org/download/nextjs-demo-v1.0/nextjs-demo-v1.0.mp4)
+
+### benefits
+
+1. get list of tags (with no pagination)
+2. get articles of a tag 
+3. get article (not styled)
+4. Routes are same as recorded links in google console.
+
+### disadvantages
+
+1. slow connecting 
 
 ## dev path
 

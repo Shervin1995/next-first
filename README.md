@@ -1,20 +1,31 @@
-# next-demo v1.0
-1400 azar 20 Sat | my1stNextjs ;)
+# next-first (v1.1)
+2023.01.28
 
-## about this version
 
-[watch video](https://archive.org/download/nextjs-demo-v1.0/nextjs-demo-v1.0.mp4)
+## about this version (v1.1)
 
-### benefits
+2023.01.28: (v1.1)
+* [ ] 
+* [x] combine `next-first` and `next-demo`
 
+2023.01.24: (v1.1)
+* [ ] node integration
+* [ ] meta tags
+* [ ] google search console
+* [ ] google analytics
+
+1400.09 (v1.0):
 1. get list of tags (with no pagination)
 2. get articles of a tag 
 3. get article (not styled)
 4. Routes are same as recorded links in google console.
 
-### disadvantages
 
-1. slow connecting 
+
+## Run
+
+use `npm run dev` or `yarn dev`
+
 
 ## dev path
 

@@ -1,11 +1,6 @@
-// next.config.js
-module.exports = {
-    images: {
-      domains: [
-          "raw.githubusercontent.com",
-          "archive.org",
-          "cdn3.wpbeginner.com"
-        ],
-    },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 }
-  
+
+module.exports = nextConfig

@@ -1,10 +1,16 @@
-import Head from 'next/head'
-
+import {Link, Head} from 'next'
 import Layout from '../../components/layout' 
-import Link from 'next/link'
 import getTag from '../../lib/getTag'
 import getTagsSlug from "../../lib/getTagsSlug"
 
+
+//
+var single_article = {
+  display: "flex", 
+  borderBottom: "solid black 1px", 
+  paddingBottom: "10px", 
+  paddingTop: "10px"
+};
 
 // --------------------------------------------------
 // 1. Post 
@@ -19,10 +25,9 @@ export default function Post({ articles, tagSlug }) {
       <div>
         {
           articles.map((article, i) => (
-            <div key={i+1}
-            style={{display: "flex", borderBottom: "solid black 1px", paddingBottom: "10px", paddingTop: "10px"}}
-            >
+            <div key={i+1} style={single_article} >
  
+              {/* 1 */}
               <div style={{direction: "rtl"}}>  
               <h4> 
                 <Link href={`/${article.slug}`}>
@@ -31,6 +36,7 @@ export default function Post({ articles, tagSlug }) {
                 </h4>
               </div>  
 
+              {/* 2 */}
               <div style={{marginLeft: "20px"}}>  
                 <img width="100px" src={article.img} />
               </div>
@@ -47,9 +53,8 @@ export default function Post({ articles, tagSlug }) {
 // 2. getStaticPaths
 // --------------------------------------------------
 export async function getStaticPaths() {
-  const paths = await getTagsSlug( );
   return {
-    paths,
+    paths: await getTagsSlug(),
     fallback: false
   }
 }
@@ -57,11 +62,10 @@ export async function getStaticPaths() {
 // --------------------------------------------------
 // 3. getStaticProps
 // --------------------------------------------------
-export async function getStaticProps({ params }) {
-  const articles = await getTag(params.slug);
+export async function getStaticProps({params}) {
   return {
     props: {
-      articles,
+      articles: await getTag(params.slug),
       tagSlug: params.slug
     }
   }
